@@ -1,3 +1,13 @@
+Toastify({
+
+    text: "Bienvenido a ZapAR",
+    position: "center",
+    duration: 1500
+    
+    }).showToast();
+
+
+
 //Declaración de la clase
 class Zapatillas{
     constructor(id, marca, modelo, talle, color, precio){
