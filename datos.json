@@ -1,0 +1,52 @@
+[
+    {
+        "id": 7,
+        "marca": "Nike",
+        "modelo": "Jordan 4",
+        "talle": 44,
+        "color": "azul",
+        "precio": 45000
+    },
+    {
+        "id": 8,
+        "marca": "Nike",
+        "modelo": "Air Force",
+        "talle": 41,
+        "color": "blanco",
+        "precio": 25000
+    },
+    {
+        "id": 9,
+        "marca": "Adidas",
+        "modelo": "Stand Smit",
+        "talle": 40,
+        "color": "blanco y verde",
+        "precio": 20000
+    },
+    {
+        "id": 10,
+        "marca": "Puma",
+        "modelo": "Rider",
+        "talle": 46,
+        "color": "amarillas",
+        "precio": 20000
+    },
+    {
+        "id": 11,
+        "marca": "Puma",
+        "modelo": "Mayze",
+        "talle": 39,
+        "color": "negras",
+        "precio": 13400
+    },
+    {
+        "id": 12,
+        "marca": "New Balance",
+        "modelo": "327",
+        "talle": 37,
+        "color": "blanco y rojo",
+        "precio": 13400
+    }
+
+
+]

@@ -20,12 +20,22 @@ class Zapatillas{
     }
 }
 //Instanciación de objetos -- respetamos orden y cantidad de atributo
-const zapas1 = new Zapatillas(1, "nike", "Jordan 1", 41, "rojos", 40000)
-const zapas2 = new Zapatillas(2, "adidas", "Forum", 38, "blancos", 38000)
-const zapas3 = new Zapatillas(3, "adidas", "NMD", 38, "negro y azul", 38000)
-const zapas4 = new Zapatillas(4, "nike", "Jordan 4", 43, "azul", 58000)
-const zapas5 = new Zapatillas(5, "vans", "Ultrarange", 41, "negras", 18000)
-const zapas6 = new Zapatillas(6, "New balance", "550", 36, "blancas", 19000)
+//const zapas1 = new Zapatillas(1, "nike", "Jordan 1", 41, "rojos", 40000)
+//const zapas2 = new Zapatillas(2, "adidas", "Forum", 38, "blancos", 38000)
+//const zapas3 = new Zapatillas(3, "adidas", "NMD", 38, "negro y azul", 38000)
+//const zapas4 = new Zapatillas(4, "nike", "Jordan 4", 43, "azul", 58000)
+//const zapas5 = new Zapatillas(5, "vans", "Ultrarange", 41, "negras", 18000)
+//const zapas6 = new Zapatillas(6, "New balance", "550", 36, "blancas", 19000)
+
+const cargarEstanteria = async () =>{
+    const response = await fetch("datos.json")
+    const data = await response.json()
+    for(let zapas of data){
+                let zapasNueva = new Zapatillas(zapas.id, zapas.marca, zapas.modelo, zapas.talle, zapas.color ,zapas.precio)
+                estanteria.push(zapasNueva)
+            }
+}
+cargarEstanteria()
 
 
 //Declarar arrays 
